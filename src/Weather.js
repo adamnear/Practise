@@ -23,9 +23,9 @@ export default function Weather() {
     //Note the [68], this is becasue it is not forcasting rain at midnight [0] but at the index [68] is forecasting for rain
     //This const is checking if there is currently rain forcasted, if true then the user has the option to play rain audio, if false the play button does not appear
     const checkForRain = () => {
-        if (rainData && rainData.length > 0 && rainData[68] > 0) { //Rain must be larger that 0 for this if statement to be true
+        if (rainData && rainData[9] > 0) { //Rain must be larger that 0 for this if statement to be true
             return true
-        }
+        } 
         return false;
     };
 
@@ -75,7 +75,7 @@ export default function Weather() {
                 {rainData && rainData.length > 0 && (
                     <div id="rainDataContainer">
                         <h3>Rain in mm:</h3>
-                        <p>{rainData[68]}</p> {/* displaying the amount of rain in mm based on the index of the array */}
+                        <p>{rainData[9]}</p> {/* displaying the amount of rain in mm based on the index of the array */}
                     </div>
                 )}
                 {checkForRain() && <AudioPlayer audioSrc={rain} />} {/* This line allows users to play rain audio only if playRain is true, if playRain is false the pause/play option will not appear */}
