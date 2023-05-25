@@ -13,14 +13,14 @@ select {
 
 input[type="range"] {
   display: block;
-  width: 20%;
+  width: 40%;
   margin: auto;
   margin-bottom: 10px;
 }
 
 button {
   display: block;
-  width: 10%;
+  width: 30%;
   margin: auto;
   margin-bottom: 30px;
 
