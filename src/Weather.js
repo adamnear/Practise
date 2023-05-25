@@ -72,7 +72,7 @@ export default function Weather() {
                     <button type="submit">Submit</button>
                 </form> 
                 
-                {rainData && rainData.length > 0 && (
+                {rainData && (
                     <div id="rainDataContainer">
                         <h3>Rain in mm:</h3>
                         <p>{rainData[9]}</p> {/* displaying the amount of rain in mm based on the index of the array */}
