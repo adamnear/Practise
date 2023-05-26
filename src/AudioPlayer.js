@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-export default function AudioPlayer({ audioSrc, imgSrc }) {
+export default function AudioPlayer({ audioSrc }) {
   const [volume, setVolume] = useState(0.5);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
