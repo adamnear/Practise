@@ -4,7 +4,6 @@ import rain from './Audio/rain.wav';
 import AudioPlayer from './AudioPlayer';
 //Pass down the local time to weather.js from app.js
 
-
 export default function Weather({ localHour }) {
     const [rainData, setRainData] = useState(null);
     const [currentRain, setCurrentRain] = useState('');
@@ -70,7 +69,8 @@ export default function Weather({ localHour }) {
                 {rainData && rainData.length > 0 && (
                     <div id="rainDataContainer">
                         <h3>The current rain amount is:</h3>
-                        <p>{rainData[currentRain]}mm</p>
+                        <p>{rainData[currentRain] !== undefined ? rainData[currentRain] : 0}mm</p>
+
                         {rainData[currentRain] > 0 && (
                             <AudioPlayer audioSrc={rain} />
                         )}
