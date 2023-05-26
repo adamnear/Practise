@@ -46,14 +46,20 @@ export default function App() {
   };
 
   return (
-    <div className="menu">
-      <img id="Img" src={musicImgSrc} alt="Img" />
-      <select onChange={handleMusicChange}>
+    <div className="container">
+      <div className="section left-section">
+        <img id="Img" src={musicImgSrc} alt="Img" />
+      </div>
+      
+      <div className="section right-section">
+        <select onChange={handleMusicChange}>
         <option value="">Choose a song...</option>
         <option value="tofino">Tofino</option>
         <option value="tranquilo">Tranquilo</option> 
       </select>
       <AudioPlayer audioSrc={musicSrc} imgSrc={musicImgSrc} />
+      </div>
+      
     
       <select onChange={handleNatureChange}>
         <option value="">Choose a nature sound...</option>

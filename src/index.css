@@ -1,59 +1,66 @@
 #Img {
-  display: block;
-  width: 20%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-select {
-  display: block;
-  margin:auto;
-  margin-bottom: 10px;
-}
-
-input[type="range"] {
-  display: block;
-  width: 20%;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-button {
-  display: block;
-  width: 10%;
-  margin: auto;
-  margin-bottom: 30px;
-
-}
-
-#Lat, #LatIn {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
-#Lon, #LonIn {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
-#rainDataContainer {
-  display: block;
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-#clock {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+  width: 20%;
+  margin: auto;
+  margin-bottom: 20px;
+  }
+  
+  select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  }
+  
+  input[type="range"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 10px;
+  }
+  
+  button {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10%;
+  margin: auto;
+  margin-bottom: 30px;
+  }
+  
+  #Lat,
+  #LatIn,
+  #Lon,
+  #LonIn,
+  #rainDataContainer,
+  #clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  }
+  
+  #rainDataContainer {
+  width: 100%;
+  }
+  
+  
+  
+  
+  
